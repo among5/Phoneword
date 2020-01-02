@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <TextView
+    android:text="Enter a Phoneword:"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="60px"
+    android:layout_centerHorizontal="true"
+    android:paddingTop="50px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/textView1" />
+  <EditText
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView1"
+    android:id="@+id/PhoneNumberText"
+    android:text="1-855-PHONE"/>
+  <Button
+    android:layout_marginLeft="180px"
+    android:layout_marginTop="30px"
+    android:textColor="@android:color/holo_blue_dark"
+    android:text="Translate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  
+    android:layout_below="@+id/PhoneNumberText"
+    android:id="@+id/TranslateButton" />
+  <Button
+    android:text="Call"
+     android:layout_marginTop="30px"
+    android:textColor="@android:color/holo_green_dark"
+    android:textSize="30px"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/TranslateButton"
+    android:layout_below="@+id/PhoneNumberText"
+    android:id="@+id/CallButton" />
+  <TextView
+    android:text=""
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/CallButton"
+    android:id="@+id/TranslatedPhoneword" />
+  <TextView
+    android:text="Previous Translations:"
+      android:paddingLeft="40px"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+        android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editText1"
+    android:id="@+id/Prev" />
+   <TextView
+    android:text="1-800-COLLECT: 1-800-2655328"
+    android:textColor="@android:color/black"
+    android:paddingLeft="80px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/Prev"
+    android:id="@+id/prevOne" />
+   <TextView
+    android:text="1-800-JUNK: 1-800-5865"
+    android:textColor="@android:color/black"
+    android:paddingLeft="80px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/prevOne"
+    android:id="@+id/prevTwo" />
+     <TextView
+    android:text=""
+    android:textColor="@android:color/black"
+    android:paddingLeft="80px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/prevTwo"
+    android:id="@+id/prevThree" />
+  <TextView
+    android:text=""
+    android:textColor="@android:color/black"
+    android:paddingLeft="80px"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/TranslatedPhoneword"
+    android:id="@+id/editText1" />
+</RelativeLayout>
